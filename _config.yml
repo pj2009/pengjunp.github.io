@@ -2,3 +2,4 @@ safe: true
 lsi: false
 permalink: /work/:title
 relative_permalinks: true
+markdown: kramdown
