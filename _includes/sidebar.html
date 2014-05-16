@@ -7,16 +7,16 @@
 	<ul>
 		{% if page.title == "About" %}	
 			<li><a href="{{ site.url }}/index.html">WORK</a></li>
-			<li><a class="current-item" href="{{ site.url }}/about.html">ABOUT</a></li>
-			<li><a href="{{ site.url }}/contact.html">CONTACT</a></li>		
+			<li><a class="current-item" href="{{ site.url }}/about/">ABOUT</a></li>
+			<li><a href="{{ site.url }}/contact/">CONTACT</a></li>		
 		{% elsif page.title == "Contact" %}	
 			<li><a href="{{ site.url }}/index.html">WORK</a></li>
-			<li><a href="{{ site.url }}/about.html">ABOUT</a></li>
-			<li><a class="current-item" href="{{ site.url }}/contact.html">CONTACT</a></li>
+			<li><a href="{{ site.url }}/about/">ABOUT</a></li>
+			<li><a class="current-item" href="{{ site.url }}/contact/">CONTACT</a></li>
 		{% else %}
 			<li><a class="current-item" href="{{ site.url }}/index.html">WORK</a></li>
-			<li><a href="{{ site.url }}/about.html">ABOUT</a></li>
-			<li><a href="{{ site.url }}/contact.html">CONTACT</a></li>
+			<li><a href="{{ site.url }}/about/">ABOUT</a></li>
+			<li><a href="{{ site.url }}/contact/">CONTACT</a></li>
 		{% endif %}
 
 	</ul>
