@@ -2,7 +2,7 @@
 * General
 **************************/
 body {
-	background: #fffff;
+	background: #ffffff;
 	font-family: 'Droid Sans', Courier New, Courier;
 	font-size: 0.9em;
 	color: #727272;
@@ -202,12 +202,14 @@ footer {
 	left: 0px;
 	right: 0px;
 	overflow: hidden;
+	z-index: 999;
+	background: #ffffff;
 }
 
 footer>.content-divider {
 	width: 100%;
 	margin: 0;
-	margin-left: 210px;
+	margin-left: 280px;
 }
 
 .copyright {
@@ -258,7 +260,7 @@ footer>.content-divider {
     width:100%;
 	top: 0;
 	left: 0;
-    z-index:999;
+    z-index:99;
 	display: block;
 	
   
