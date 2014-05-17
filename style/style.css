@@ -13,10 +13,10 @@ body {
 .container {
 	margin: 0 auto;
 	min-height: 480px;
-	height: 100%;
+	height: 90%;
 	/*position: relative;*/
 	/*padding: 4% 2% 0;*/
-	/*padding-top: 0;*/
+	padding : 2% 0;
 	overflow: auto;
 }
 
@@ -44,7 +44,7 @@ span {
 **************************/
 nav {
 	width: 210px;
-	height: 100%;
+	height: 90%;
 	max-height: 850px;
 	min-height: 480px;
 	position: fixed;
