@@ -6,17 +6,22 @@ body {
 	font-family: 'Droid Sans', Courier New, Courier;
 	font-size: 0.9em;
 	color: #727272;
-	/*overflow-y: scroll;*/
+	overflow-y:hidden;
 }
 
 .container {
 	margin: 0 auto;
 	min-height: 480px;
-	/*height: 90%;*/
-	padding : 2% 0;
-	overflow: auto;
+	
+	/*padding : 2% 0 0 0;*/
 	/*border: 1px dotted red;*/
 }
+
+/*.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
 
 img {
 	/*width: 100%;*/
@@ -25,16 +30,6 @@ img {
 
 span {
 	color: #59C3DC;
-}
-
-.loader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url('../images/loader.gif') 50% 50% no-repeat rgb(249,249,249);
 }
 
 /*************************
@@ -48,10 +43,14 @@ nav {
 	min-height: 480px;
 	position: fixed;
 	padding: 0;
+	padding-right: 2%;
+
 	text-align: right;
 	text-align: -moz-right;
-	/*border: 1px dotted #ffff00;*/
 	z-index: 999;
+
+	background: #fff;
+	opacity: .8;
 }
 
 nav>ul {
@@ -68,7 +67,7 @@ nav>ul>li, li {
 
 #logo {
 	margin: 0 auto;
-	width: 80%;
+	width: 160px;
 	padding-bottom: 30px;
 }
 
@@ -121,7 +120,7 @@ nav a {
 	position: relative;
 	padding: 0 0 0 0; /* 80 0 0 0 */
 	padding-left: 13%;
-	padding-right: 3%;
+	/*padding-right: 3%;*/
 	/*border: 1px dotted #ffff00;*/
 }
 
@@ -221,20 +220,29 @@ footer>.content-divider {
 /*************************
 * Home page
 **************************/
+tr {
+	vertical-align: top;
+}
+
 .project-list {
-	/*margin-top: 1.5%; */
-	list-style: none;
-	-webkit-padding-start: 0;
-	overflow: hidden;
+	margin-left: -50px;
+	margin-right: -999em;
+
+	border-spacing: 50px 0px;
+    border-collapse: separate;
+
+    position: absolute;
 }
 
 .project-item {
-	position: relative;
+	/*position: relative;
 	float: left;
 	width: 30.8%;
 	margin: 0 1px 2px 1px;
-	padding: 1%;
+	padding: 1%;*/
 	background: #fcfcfc;
+	width: 400px;
+	margin-right: 20px;
 
 	-moz-box-shadow: 0px 2px 10px rgba(68,68,68,0.1);
 	-webkit-box-shadow: 0px 2px 10px rgba(68,68,68,0.1);

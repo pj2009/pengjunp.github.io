@@ -14,19 +14,28 @@
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
 		<!-- JQuery Library -->
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<!--<script type="text/javascript">
+		<script src="/js/jquery-1.11.1.min.js"></script>
+		<script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+		<script type="text/javascript">
 		
 		$(window).load(function() {
-			$(".loader").fadeOut("slow");
-		})
-		</script>-->
+			$('.container').css('height', $(window).outerHeight());
+			// $('.project-list').css('top', ($('.container').innerHeight()-$('.project-list').innerHeight())/2);
+		});
+
+		$(window).resize(function() {
+			$('.container').css('height', $(window).innerHeight());
+		});
+
+		$(function() {
+	   		$('body').mousewheel(function(event, delta) {
+	      	this.scrollLeft -= (delta * 30);	    
+	     	 event.preventDefault();
+	   		});
+		});
+		</script>
 	<body>
-		<!-- loader -->
-		<!-- <div class="loader"></div> -->
-		<!-- end of loader -->
-		<!-- container -->
-		<div class="container project-list-space">
+		<div class="container">
 			
 			<!-- navigation menu -->
 <nav>
@@ -79,109 +88,111 @@
 			<!-- content -->
 			<div class="content">
 				<!-- content title -->
-				<div class="content-title">
+				<!-- <div class="content-title">
 					<h2>selected work</h2>					
-				</div>
+				</div> -->
 				<!-- end content title -->
 				
 				<!-- content divider -->
-				<div class="content-divider"></div>
+				<!-- <div class="content-divider"></div> -->
 				<!-- end content divider -->
 				
 				<!-- project item -->
-<ul class="project-list">
-	
-		<li class="project-item">
-			<div class="project-overlay">
-				<a href="/work/sonare">
-					<img class="project-img-top" src="/images/sonare/thumb-mono.jpg" alt>
-					<img class="project-img-bottom" src="/images/sonare/thumb.jpg" alt>
-				</a>
-			</div>
-			<div class="project-name">
-				<a href="/work/sonare">Sonare</a>
-			</div>
-			<div class="project-type">
-				<a href="/work/sonare">ui/ux design</a>
-			</div>
-		</li>
-	
-		<li class="project-item">
-			<div class="project-overlay">
-				<a href="/work/bohate">
-					<img class="project-img-top" src="/images/bohate/thumb-mono.jpg" alt>
-					<img class="project-img-bottom" src="/images/bohate/thumb.jpg" alt>
-				</a>
-			</div>
-			<div class="project-name">
-				<a href="/work/bohate">BOHATE</a>
-			</div>
-			<div class="project-type">
-				<a href="/work/bohate">web design</a>
-			</div>
-		</li>
-	
-		<li class="project-item">
-			<div class="project-overlay">
-				<a href="/work/planetofinsects">
-					<img class="project-img-top" src="/images/planetofinsects/thumb-mono.jpg" alt>
-					<img class="project-img-bottom" src="/images/planetofinsects/thumb.jpg" alt>
-				</a>
-			</div>
-			<div class="project-name">
-				<a href="/work/planetofinsects">Planet of Insects</a>
-			</div>
-			<div class="project-type">
-				<a href="/work/planetofinsects">game design</a>
-			</div>
-		</li>
-	
-		<li class="project-item">
-			<div class="project-overlay">
-				<a href="/work/sis">
-					<img class="project-img-top" src="/images/sis/thumb-mono.jpg" alt>
-					<img class="project-img-bottom" src="/images/sis/thumb.jpg" alt>
-				</a>
-			</div>
-			<div class="project-name">
-				<a href="/work/sis">SFU SIS</a>
-			</div>
-			<div class="project-type">
-				<a href="/work/sis">ui design</a>
-			</div>
-		</li>
-	
-		<li class="project-item">
-			<div class="project-overlay">
-				<a href="/work/maximumpc">
-					<img class="project-img-top" src="/images/maximumpc/thumb-mono.jpg" alt>
-					<img class="project-img-bottom" src="/images/maximumpc/thumb.jpg" alt>
-				</a>
-			</div>
-			<div class="project-name">
-				<a href="/work/maximumpc">Maximum PC</a>
-			</div>
-			<div class="project-type">
-				<a href="/work/maximumpc">magazine design</a>
-			</div>
-		</li>
-	
-		<li class="project-item">
-			<div class="project-overlay">
-				<a href="/work/snap">
-					<img class="project-img-top" src="/images/snap/thumb-mono.jpg" alt>
-					<img class="project-img-bottom" src="/images/snap/thumb.jpg" alt>
-				</a>
-			</div>
-			<div class="project-name">
-				<a href="/work/snap">SNAP</a>
-			</div>
-			<div class="project-type">
-				<a href="/work/snap">short film</a>
-			</div>
-		</li>
+<table class="project-list">
+	<tr>
 		
-</ul>
+			<td class="project-item">
+				<div class="project-overlay">
+					<a href="/work/sonare">
+						<img class="project-img-top" src="/images/sonare/thumb-mono.jpg" alt>
+						<img class="project-img-bottom" src="/images/sonare/thumb.jpg" alt>
+					</a>
+				</div>
+				<div class="project-name">
+					<a href="/work/sonare">Sonare</a>
+				</div>
+				<div class="project-type">
+					<a href="/work/sonare">ui/ux design</a>
+				</div>
+			</td>
+		
+			<td class="project-item">
+				<div class="project-overlay">
+					<a href="/work/bohate">
+						<img class="project-img-top" src="/images/bohate/thumb-mono.jpg" alt>
+						<img class="project-img-bottom" src="/images/bohate/thumb.jpg" alt>
+					</a>
+				</div>
+				<div class="project-name">
+					<a href="/work/bohate">BOHATE</a>
+				</div>
+				<div class="project-type">
+					<a href="/work/bohate">web design</a>
+				</div>
+			</td>
+		
+			<td class="project-item">
+				<div class="project-overlay">
+					<a href="/work/planetofinsects">
+						<img class="project-img-top" src="/images/planetofinsects/thumb-mono.jpg" alt>
+						<img class="project-img-bottom" src="/images/planetofinsects/thumb.jpg" alt>
+					</a>
+				</div>
+				<div class="project-name">
+					<a href="/work/planetofinsects">Planet of Insects</a>
+				</div>
+				<div class="project-type">
+					<a href="/work/planetofinsects">game design</a>
+				</div>
+			</td>
+		
+			<td class="project-item">
+				<div class="project-overlay">
+					<a href="/work/sis">
+						<img class="project-img-top" src="/images/sis/thumb-mono.jpg" alt>
+						<img class="project-img-bottom" src="/images/sis/thumb.jpg" alt>
+					</a>
+				</div>
+				<div class="project-name">
+					<a href="/work/sis">SFU SIS</a>
+				</div>
+				<div class="project-type">
+					<a href="/work/sis">ui design</a>
+				</div>
+			</td>
+		
+			<td class="project-item">
+				<div class="project-overlay">
+					<a href="/work/maximumpc">
+						<img class="project-img-top" src="/images/maximumpc/thumb-mono.jpg" alt>
+						<img class="project-img-bottom" src="/images/maximumpc/thumb.jpg" alt>
+					</a>
+				</div>
+				<div class="project-name">
+					<a href="/work/maximumpc">Maximum PC</a>
+				</div>
+				<div class="project-type">
+					<a href="/work/maximumpc">magazine design</a>
+				</div>
+			</td>
+		
+			<td class="project-item">
+				<div class="project-overlay">
+					<a href="/work/snap">
+						<img class="project-img-top" src="/images/snap/thumb-mono.jpg" alt>
+						<img class="project-img-bottom" src="/images/snap/thumb.jpg" alt>
+					</a>
+				</div>
+				<div class="project-name">
+					<a href="/work/snap">SNAP</a>
+				</div>
+				<div class="project-type">
+					<a href="/work/snap">short film</a>
+				</div>
+			</td>
+		
+	</tr>	
+</table>
 <!-- end project item -->
 								
 				

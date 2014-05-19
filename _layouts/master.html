@@ -14,32 +14,41 @@
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
 		<!-- JQuery Library -->
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<!--<script type="text/javascript">
+		<script src="{{ site.url }}/js/jquery-1.11.1.min.js"></script>
+		<script type='text/javascript' src='{{ site.url }}/js/jquery.mousewheel.min.js'></script>
+		<script type="text/javascript">
 		
 		$(window).load(function() {
-			$(".loader").fadeOut("slow");
-		})
-		</script>-->
+			$('.container').css('height', $(window).outerHeight());
+			// $('.project-list').css('top', ($('.container').innerHeight()-$('.project-list').innerHeight())/2);
+		});
+
+		$(window).resize(function() {
+			$('.container').css('height', $(window).innerHeight());
+		});
+
+		$(function() {
+	   		$('body').mousewheel(function(event, delta) {
+	      	this.scrollLeft -= (delta * 30);	    
+	     	 event.preventDefault();
+	   		});
+		});
+		</script>
 	<body>
-		<!-- loader -->
-		<!-- <div class="loader"></div> -->
-		<!-- end of loader -->
-		<!-- container -->
-		<div class="container project-list-space">
+		<div class="container">
 			
 			{% include sidebar.html %}
 			
 			<!-- content -->
 			<div class="content">
 				<!-- content title -->
-				<div class="content-title">
+				<!-- <div class="content-title">
 					<h2>{{ page.type }}</h2>					
-				</div>
+				</div> -->
 				<!-- end content title -->
 				
 				<!-- content divider -->
-				<div class="content-divider"></div>
+				<!-- <div class="content-divider"></div> -->
 				<!-- end content divider -->
 				
 				{{ content }}
