@@ -18,13 +18,19 @@
 		<script type='text/javascript' src='{{ site.url }}/js/jquery.mousewheel.min.js'></script>
 		<script type="text/javascript">
 		
-		$(window).load(function() {
-			$('.container').css('height', $(window).outerHeight());
-			// $('.project-list').css('top', ($('.container').innerHeight()-$('.project-list').innerHeight())/2);
+		$(window).ready(function() {
+			var window_height = $(window).outerHeight();
+			var content_height = window_height * 0.7;
+			var margin_height = (window_height - content_height) / 2;
+			$('.container').css('height', window_height);
+			$('nav').css('height', content_height);
+			$('.project-img-top').css('height', content_height);
+			$('.project-img-bottom').css('height', content_height);
+			$('.container').css('padding-top', margin_height);
 		});
 
 		$(window).resize(function() {
-			$('.container').css('height', $(window).innerHeight());
+			$('.container').css('height', window_height);
 		});
 
 		$(function() {
