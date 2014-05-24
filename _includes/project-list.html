@@ -1,21 +1,14 @@
 <!-- project item -->
 <div class="project-list">
-		{% for post in site.posts %}
-			<div class="project-item col-lg-4">
-				<img class="project-img" src="{{ site.url }}/images/{{ post.directory }}/thumb-mono.jpg" alt>
-				<div class="project-overlay">
-					<a class="expand" href="{{ post.url }}">+</a>
-				</div>
-
-				<!-- <div class="project-name">
-					<a href="{{ post.url }}">{{ post.title }}</a>
-				</div>
-				<div class="project-type">
-					<a href="{{ post.url }}">{{ post.type[0] }}</a>
-				</div> -->
-
+	{% for post in site.posts %}
+		<div class="project-item col-md-4">
+			<img class="project-img" src="{{ site.url }}/images/{{ post.directory }}/thumb-mono.jpg" alt>
+			<div class="project-overlay">
+				<a class="expand" href="{{ post.url }}">+</a>
+				<!-- <a class="expand" href="{{ post.url }}">{{ post.title }}</a> -->
 			</div>
-		{% endfor %}
+		</div>
+	{% endfor %}
 </div>
 <!-- end project item -->
 
