@@ -1,233 +1,27 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width" />
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Home | Jun Peng Photography</title>
 		<link rel='icon' type='image/x-icon' href='images/favicon.ico' />
 		<!-- Style Sheets -->
-		<link rel="stylesheet" type="text/css" href="/style/reset.css">
-		<link rel="stylesheet" type="text/css" href="/style/clearfix.css">
-		<link rel="stylesheet" type="text/css" href="/style/style.css">
-		<link rel="stylesheet" type="text/css" href="/style/style-media.css">
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
 		<!-- Google Font -->
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
+	<body>
+		<!-- container -->
+		<div class="container">
+
+			this is index page!
+		
+		<!-- end container -->
 		<!-- JQuery Library -->
 		<script src="/js/jquery-1.11.1.min.js"></script>
-		<script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
-		<script type="text/javascript">
-		
-		$(window).ready(function() {
-			var window_height = $(window).outerHeight();
-			var content_height = window_height * 0.7;
-			var margin_height = (window_height - content_height) / 2;
-			$('.container').css('height', window_height);
-			$('nav').css('height', content_height);
-			$('.project-img-top').css('height', content_height);
-			$('.project-img-bottom').css('height', content_height);
-			$('.container').css('padding-top', margin_height);
-		});
-
-		$(window).resize(function() {
-			$('.container').css('height', window_height);
-		});
-
-		$(function() {
-	   		$('body').mousewheel(function(event, delta) {
-	      	this.scrollLeft -= (delta * 30);	    
-	     	 event.preventDefault();
-	   		});
-		});
-		</script>
-	<body>
-		<div class="container">
-			
-			<!-- navigation menu -->
-<nav>
-	<a href="/index.html">
-		<img src="/images/logo.png" id="logo" alt>
-	</a>
-	
-	<ul id="nav-menu">
-		
-			<li><a class="current-item" href="/index.html">WORK</a></li>
-			<li><a href="/about/">ABOUT</a></li>
-			<li><a href="/contact/">CONTACT</a></li>
-		
-
-	</ul>
-	
-	<!-- recent work -->
-	<ul id="recent-work">
-		<li><h3>RECENT</h3><li>
-		
-      		<li>
-      			
-      				<a href="/work/sonare">Sonare</a>
-      			
-      		</li>
-    	
-      		<li>
-      			
-      				<a href="/work/bohate">BOHATE</a>
-      			
-      		</li>
-    	
-      		<li>
-      			
-      				<a href="/work/planetofinsects">Planet of Insects</a>
-      			
-      		</li>
-    	
-      		<li>
-      			
-      				<a href="/work/sis">SFU SIS</a>
-      			
-      		</li>
-    	
-	</ul>
-	<!-- end recent work -->			
-</nav>
-<!-- end navigation menu -->
-			
-			<!-- content -->
-			<div class="content">
-				<!-- content title -->
-				<!-- <div class="content-title">
-					<h2>selected work</h2>					
-				</div> -->
-				<!-- end content title -->
-				
-				<!-- content divider -->
-				<!-- <div class="content-divider"></div> -->
-				<!-- end content divider -->
-				
-				<!-- project item -->
-<table class="project-list">
-	<tr>
-		
-			<td class="project-item">
-				<div class="project-overlay">
-					<a href="/work/sonare">
-						<img class="project-img-top" src="/images/sonare/thumb-mono.jpg" alt>
-						<img class="project-img-bottom" src="/images/sonare/thumb.jpg" alt>
-					</a>
-				</div>
-
-				<!-- <div class="project-name">
-					<a href="/work/sonare">Sonare</a>
-				</div>
-				<div class="project-type">
-					<a href="/work/sonare">ui/ux design</a>
-				</div> -->
-
-			</td>
-		
-			<td class="project-item">
-				<div class="project-overlay">
-					<a href="/work/bohate">
-						<img class="project-img-top" src="/images/bohate/thumb-mono.jpg" alt>
-						<img class="project-img-bottom" src="/images/bohate/thumb.jpg" alt>
-					</a>
-				</div>
-
-				<!-- <div class="project-name">
-					<a href="/work/bohate">BOHATE</a>
-				</div>
-				<div class="project-type">
-					<a href="/work/bohate">web design</a>
-				</div> -->
-
-			</td>
-		
-			<td class="project-item">
-				<div class="project-overlay">
-					<a href="/work/planetofinsects">
-						<img class="project-img-top" src="/images/planetofinsects/thumb-mono.jpg" alt>
-						<img class="project-img-bottom" src="/images/planetofinsects/thumb.jpg" alt>
-					</a>
-				</div>
-
-				<!-- <div class="project-name">
-					<a href="/work/planetofinsects">Planet of Insects</a>
-				</div>
-				<div class="project-type">
-					<a href="/work/planetofinsects">game design</a>
-				</div> -->
-
-			</td>
-		
-			<td class="project-item">
-				<div class="project-overlay">
-					<a href="/work/sis">
-						<img class="project-img-top" src="/images/sis/thumb-mono.jpg" alt>
-						<img class="project-img-bottom" src="/images/sis/thumb.jpg" alt>
-					</a>
-				</div>
-
-				<!-- <div class="project-name">
-					<a href="/work/sis">SFU SIS</a>
-				</div>
-				<div class="project-type">
-					<a href="/work/sis">ui design</a>
-				</div> -->
-
-			</td>
-		
-			<td class="project-item">
-				<div class="project-overlay">
-					<a href="/work/maximumpc">
-						<img class="project-img-top" src="/images/maximumpc/thumb-mono.jpg" alt>
-						<img class="project-img-bottom" src="/images/maximumpc/thumb.jpg" alt>
-					</a>
-				</div>
-
-				<!-- <div class="project-name">
-					<a href="/work/maximumpc">Maximum PC</a>
-				</div>
-				<div class="project-type">
-					<a href="/work/maximumpc">magazine design</a>
-				</div> -->
-
-			</td>
-		
-			<td class="project-item">
-				<div class="project-overlay">
-					<a href="/work/snap">
-						<img class="project-img-top" src="/images/snap/thumb-mono.jpg" alt>
-						<img class="project-img-bottom" src="/images/snap/thumb.jpg" alt>
-					</a>
-				</div>
-
-				<!-- <div class="project-name">
-					<a href="/work/snap">SNAP</a>
-				</div>
-				<div class="project-type">
-					<a href="/work/snap">short film</a>
-				</div> -->
-
-			</td>
-		
-	</tr>	
-</table>
-<!-- end project item -->
-								
-				
-				
-				<!-- footer -->
-				<footer>
-	<!-- content divider -->
-	<div class="content-divider"></div>
-	<!-- end content divider -->
-	<div class="copyright">
-		<p>&#169; Jun Peng / 2014 / <a href="mailto:pengjunp@sfu.ca">pengjunp@sfu.ca</a> /</p>
-	</div>
-</footer>
-				<!-- end footer -->
-			</div>
-			<!-- end content -->
-		</div>
-		<!-- end container -->
+		<script src="/js/bootstrap.min.js"></script>
 	</body>
 </html>

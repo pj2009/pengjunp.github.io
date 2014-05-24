@@ -1,72 +1,27 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width" />
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>{{ page.title }} | Jun Peng Photography</title>
 		<link rel='icon' type='image/x-icon' href='images/favicon.ico' />
 		<!-- Style Sheets -->
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}/style/reset.css">
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}/style/clearfix.css">
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}/style/style.css">
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}/style/style-media.css">
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/style.css">
 		<!-- Google Font -->
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
+	<body>
+		<!-- container -->
+		<div class="container">
+
+			{{ content }}
+		
+		<!-- end container -->
 		<!-- JQuery Library -->
 		<script src="{{ site.url }}/js/jquery-1.11.1.min.js"></script>
-		<script type='text/javascript' src='{{ site.url }}/js/jquery.mousewheel.min.js'></script>
-		<script type="text/javascript">
-		
-		$(window).ready(function() {
-			var window_height = $(window).outerHeight();
-			var content_height = window_height * 0.7;
-			var margin_height = (window_height - content_height) / 2;
-			$('.container').css('height', window_height);
-			$('nav').css('height', content_height);
-			$('.project-img-top').css('height', content_height);
-			$('.project-img-bottom').css('height', content_height);
-			$('.container').css('padding-top', margin_height);
-		});
-
-		$(window).resize(function() {
-			$('.container').css('height', window_height);
-		});
-
-		$(function() {
-	   		$('body').mousewheel(function(event, delta) {
-	      	this.scrollLeft -= (delta * 30);	    
-	     	 event.preventDefault();
-	   		});
-		});
-		</script>
-	<body>
-		<div class="container">
-			
-			{% include sidebar.html %}
-			
-			<!-- content -->
-			<div class="content">
-				<!-- content title -->
-				<!-- <div class="content-title">
-					<h2>{{ page.type }}</h2>					
-				</div> -->
-				<!-- end content title -->
-				
-				<!-- content divider -->
-				<!-- <div class="content-divider"></div> -->
-				<!-- end content divider -->
-				
-				{{ content }}
-								
-				
-				
-				<!-- footer -->
-				{% include footer.html %}
-				<!-- end footer -->
-			</div>
-			<!-- end content -->
-		</div>
-		<!-- end container -->
+		<script src="{{ site.url }}/js/bootstrap.min.js"></script>
 	</body>
 </html>

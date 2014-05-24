@@ -1,109 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width" />
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Contact | Jun Peng Photography</title>
 		<link rel='icon' type='image/x-icon' href='images/favicon.ico' />
 		<!-- Style Sheets -->
-		<link rel="stylesheet" type="text/css" href="/style/reset.css">
-		<link rel="stylesheet" type="text/css" href="/style/clearfix.css">
-		<link rel="stylesheet" type="text/css" href="/style/style.css">
-		<link rel="stylesheet" type="text/css" href="/style/style-media.css">
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
 		<!-- Google Font -->
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
-		<!-- JQuery Library -->
-		<script src="/js/jquery-1.11.1.min.js"></script>
-		<script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
-		<script type="text/javascript">
-		
-		$(window).ready(function() {
-			var window_height = $(window).outerHeight();
-			var content_height = window_height * 0.7;
-			var margin_height = (window_height - content_height) / 2;
-			$('.container').css('height', window_height);
-			$('nav').css('height', content_height);
-			$('.project-img-top').css('height', content_height);
-			$('.project-img-bottom').css('height', content_height);
-			$('.container').css('padding-top', margin_height);
-		});
-
-		$(window).resize(function() {
-			$('.container').css('height', window_height);
-		});
-
-		$(function() {
-	   		$('body').mousewheel(function(event, delta) {
-	      	this.scrollLeft -= (delta * 30);	    
-	     	 event.preventDefault();
-	   		});
-		});
-		</script>
 	<body>
+		<!-- container -->
 		<div class="container">
-			
-			<!-- navigation menu -->
-<nav>
-	<a href="/index.html">
-		<img src="/images/logo.png" id="logo" alt>
-	</a>
-	
-	<ul id="nav-menu">
-			
-			<li><a href="/index.html">WORK</a></li>
-			<li><a href="/about/">ABOUT</a></li>
-			<li><a class="current-item" href="/contact/">CONTACT</a></li>
-		
 
-	</ul>
-	
-	<!-- recent work -->
-	<ul id="recent-work">
-		<li><h3>RECENT</h3><li>
-		
-      		<li>
-      			
-      				<a href="/work/sonare">Sonare</a>
-      			
-      		</li>
-    	
-      		<li>
-      			
-      				<a href="/work/bohate">BOHATE</a>
-      			
-      		</li>
-    	
-      		<li>
-      			
-      				<a href="/work/planetofinsects">Planet of Insects</a>
-      			
-      		</li>
-    	
-      		<li>
-      			
-      				<a href="/work/sis">SFU SIS</a>
-      			
-      		</li>
-    	
-	</ul>
-	<!-- end recent work -->			
-</nav>
-<!-- end navigation menu -->
-			
-			<!-- content -->
-			<div class="content">
-				<!-- content title -->
-				<!-- <div class="content-title">
-					<h2>contact</h2>					
-				</div> -->
-				<!-- end content title -->
-				
-				<!-- content divider -->
-				<!-- <div class="content-divider"></div> -->
-				<!-- end content divider -->
-				
-				<!-- content divider -->
+			<!-- content divider -->
 <div class="content-divider"></div>
 <!-- end of content divider -->
 
@@ -131,22 +45,10 @@
 	<h3><a href="http://twitter.com/pengjunp" target="_blank">@pengjunp</a></h3>
 </div>
 
-								
-				
-				
-				<!-- footer -->
-				<footer>
-	<!-- content divider -->
-	<div class="content-divider"></div>
-	<!-- end content divider -->
-	<div class="copyright">
-		<p>&#169; Jun Peng / 2014 / <a href="mailto:pengjunp@sfu.ca">pengjunp@sfu.ca</a> /</p>
-	</div>
-</footer>
-				<!-- end footer -->
-			</div>
-			<!-- end content -->
-		</div>
+		
 		<!-- end container -->
+		<!-- JQuery Library -->
+		<script src="/js/jquery-1.11.1.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
 	</body>
 </html>
