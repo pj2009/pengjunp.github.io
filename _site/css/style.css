@@ -96,3 +96,36 @@
 .project-item.hover .project-overlay{
 	height: 100%;
 }
+
+/*************************
+* General
+**************************/
+body {
+	color: #999;
+}
+
+a {
+	color: #999;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.divider {
+	clear: both;
+	border-bottom: 1px solid #ddd;
+}
+
+/*************************
+* footer
+**************************/
+footer {
+	margin-top: 2em;
+}
