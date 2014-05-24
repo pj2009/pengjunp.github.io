@@ -17,11 +17,121 @@
 		<!-- container -->
 		<div class="container">
 
-			this is index page!
+			<!-- project item -->
+<div class="project-list">
+		
+			<div class="project-item col-lg-4">
+				<img class="project-img" src="/images/sonare/thumb-mono.jpg" alt>
+				<div class="project-overlay">
+					<a class="expand" href="/work/sonare">+</a>
+				</div>
+
+				<!-- <div class="project-name">
+					<a href="/work/sonare">Sonare</a>
+				</div>
+				<div class="project-type">
+					<a href="/work/sonare">ui/ux design</a>
+				</div> -->
+
+			</div>
+		
+			<div class="project-item col-lg-4">
+				<img class="project-img" src="/images/bohate/thumb-mono.jpg" alt>
+				<div class="project-overlay">
+					<a class="expand" href="/work/bohate">+</a>
+				</div>
+
+				<!-- <div class="project-name">
+					<a href="/work/bohate">BOHATE</a>
+				</div>
+				<div class="project-type">
+					<a href="/work/bohate">web design</a>
+				</div> -->
+
+			</div>
+		
+			<div class="project-item col-lg-4">
+				<img class="project-img" src="/images/planetofinsects/thumb-mono.jpg" alt>
+				<div class="project-overlay">
+					<a class="expand" href="/work/planetofinsects">+</a>
+				</div>
+
+				<!-- <div class="project-name">
+					<a href="/work/planetofinsects">Planet of Insects</a>
+				</div>
+				<div class="project-type">
+					<a href="/work/planetofinsects">game design</a>
+				</div> -->
+
+			</div>
+		
+			<div class="project-item col-lg-4">
+				<img class="project-img" src="/images/sis/thumb-mono.jpg" alt>
+				<div class="project-overlay">
+					<a class="expand" href="/work/sis">+</a>
+				</div>
+
+				<!-- <div class="project-name">
+					<a href="/work/sis">SFU SIS</a>
+				</div>
+				<div class="project-type">
+					<a href="/work/sis">ui design</a>
+				</div> -->
+
+			</div>
+		
+			<div class="project-item col-lg-4">
+				<img class="project-img" src="/images/maximumpc/thumb-mono.jpg" alt>
+				<div class="project-overlay">
+					<a class="expand" href="/work/maximumpc">+</a>
+				</div>
+
+				<!-- <div class="project-name">
+					<a href="/work/maximumpc">Maximum PC</a>
+				</div>
+				<div class="project-type">
+					<a href="/work/maximumpc">magazine design</a>
+				</div> -->
+
+			</div>
+		
+			<div class="project-item col-lg-4">
+				<img class="project-img" src="/images/snap/thumb-mono.jpg" alt>
+				<div class="project-overlay">
+					<a class="expand" href="/work/snap">+</a>
+				</div>
+
+				<!-- <div class="project-name">
+					<a href="/work/snap">SNAP</a>
+				</div>
+				<div class="project-type">
+					<a href="/work/snap">short film</a>
+				</div> -->
+
+			</div>
+		
+</div>
+<!-- end project item -->
+
+
 		
 		<!-- end container -->
 		<!-- JQuery Library -->
 		<script src="/js/jquery-1.11.1.min.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+// handle the mouseenter functionality
+$(".project-item").mouseenter(function(){
+	$(this).addClass("hover");
+	console.log('enter');
+})
+// handle the mouseleave functionality
+.mouseleave(function(){
+	$(this).removeClass("hover");
+	console.log('leave');
+});
+});
+</script>
 	</body>
 </html>

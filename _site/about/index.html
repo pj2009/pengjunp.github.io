@@ -32,5 +32,19 @@
 		<!-- JQuery Library -->
 		<script src="/js/jquery-1.11.1.min.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+// handle the mouseenter functionality
+$(".project-item").mouseenter(function(){
+	$(this).addClass("hover");
+	console.log('enter');
+})
+// handle the mouseleave functionality
+.mouseleave(function(){
+	$(this).removeClass("hover");
+	console.log('leave');
+});
+});
+</script>
 	</body>
 </html>

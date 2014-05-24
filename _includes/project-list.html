@@ -1,13 +1,10 @@
 <!-- project item -->
-<table class="project-list">
-	<tr>
+<div class="project-list">
 		{% for post in site.posts %}
-			<td class="project-item">
+			<div class="project-item col-lg-4">
+				<img class="project-img" src="{{ site.url }}/images/{{ post.directory }}/thumb-mono.jpg" alt>
 				<div class="project-overlay">
-					<a href="{{ post.url }}">
-						<img class="project-img-top" src="{{ site.url }}/images/{{ post.directory }}/thumb-mono.jpg" alt>
-						<img class="project-img-bottom" src="{{ site.url }}/images/{{ post.directory }}/thumb.jpg" alt>
-					</a>
+					<a class="expand" href="{{ post.url }}">+</a>
 				</div>
 
 				<!-- <div class="project-name">
@@ -17,8 +14,8 @@
 					<a href="{{ post.url }}">{{ post.type[0] }}</a>
 				</div> -->
 
-			</td>
+			</div>
 		{% endfor %}
-	</tr>	
-</table>
+</div>
 <!-- end project item -->
+
