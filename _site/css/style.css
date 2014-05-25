@@ -109,6 +109,9 @@
 **************************/
 body {
 	color: #999;
+
+	font-family: 'droidsans', Arial, sans-serif;
+	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
 }
 
 .container {
@@ -139,36 +142,33 @@ a:hover {
 **************************/
 header {
 	margin-bottom: 2em;
-	text-transform: uppercase;
 	overflow: hidden;
 }
 
 #nav-logo {
 	float: left;
-	font-family: 'Muli', sans-serif;
+	font-family: 'Muli', Arial, sans-serif;
 }
 
-#nav-logo > h1 {
+#nav-logo > a > h1 {
 	margin: 0;
 	padding: 0;
 	color: #000;
-	letter-spacing: 5px;
+	letter-spacing: 4px;
 	line-height: 40px;
-	font-weight: bold;
+	/*font-weight: bold;*/
+	/*text-transform: uppercase;*/
+	font-variant: small-caps;
 }
 
 #nav-menu {
 	float: right;
-	font-family: 'droidsans', Arial;
 	font-size: 12px;
 }
 
-#nav-menu > ul > li {
-	letter-spacing: 2px;
-}
-
 #nav-menu > ul > li > a {
-	padding: 11px 15px;
+	padding: 11px 20px;
+	letter-spacing: 2px;
 }
 
 #nav-menu > ul > li > a:last-child {
@@ -184,7 +184,6 @@ header {
 **************************/
 footer {
 	margin-top: 2em;
-	font-family: 'droidsans', Arial;
 }
 
 /*************************
@@ -202,13 +201,12 @@ footer {
 }
 
 @font-face {
-    font-family: 'antonio';
-    src: url('antonio-regular-webfont.eot');
-    src: url('antonio-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('antonio-regular-webfont.woff') format('woff'),
-         url('antonio-regular-webfont.ttf') format('truetype'),
-         url('antonio-regular-webfont.svg#antonioregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+	font-family: 'antonio';
+	src: url('../fonts/antonio-regular-webfont.eot');
+	src: url('../fonts/antonio-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/antonio-regular-webfont.woff') format('woff'),
+		url('../fonts/antonio-regular-webfont.ttf') format('truetype'),
+		url('../fonts/antonio-regular-webfont.svg#antonioregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
